@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- the code out -->
+  <title>HOME PAGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 0px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+ /* 
+  <!-- Side Nav -->
+  
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/
+span.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+<!--video -->
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: Calibri, sans-serif;
+			}
+            
+            .content-section {
+                width: 50%;
+                margin: 0 auto;
+                padding: 15% 0;
+            }
+            .content-section h1 {
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            .content-section p {
+                font-size: 1.2em;
+                color: #333;
+            }
+            
+            .video-section {
+                position: relative;
+                width: 100%;
+                max-height: 550px;
+                overflow: hidden;
+            }
+            #video-elem {
+                width: 100%;
+            }
+            video::-webkit-media-controls {
+                display:none !important;
+            }
+            .video-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.8);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .video-overlay:hover {
+                opacity: 1;
+            }
+            .video-overlay h1 {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                text-transform: uppercase;
+                font-size: 3em;
+                color: #000;
+                text-align: center;
+            }
+  .zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}  
+			
+		</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div  class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="Home.html">HOME</a></li>
+        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#">SKILLS & EXPERIENCE</a></li>
+		<li><a href="#">PROJECTS</a></li>
+        <li><a href="#">CONTACT ME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--
+<span class="sticky" style="color: white;  text-shadow: 2px 2px 4px #000000;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+
+<div  id="main">
+  
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+</div>
+-->
+
+<!-- First Container -->
+<div class="container-fluid text-center">
+<div class="container-fluid video-section">
+			<video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted" poster="logo.mp4"> 
+				<source src="logovid.mp4" type="video/mp4">
+				Video not supported
+			</video>
+            
+            <div class="video-overlay">
+                <h3 class="margin" style="color: white;  text-shadow: 2px 2px 4px #000000;font-size:30px;cursor:pointer">Kago Magowe</h3>
+				<img src="logo.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+				<h3 style="color: white;  text-shadow: 2px 2px 4px #000000;font-size:30px;cursor:pointer">Software Engineer</h3>
+            </div>
+  </div>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin zoom">Web Developer</h3>
+  <p class="zoom">HTML, CSS, JAVASCRIPT, SQL, PHP, Bootstrap</p>
+  <h3 class="margin zoom">Graphic Designer</h3>
+  <p class="zoom">ADOBE AFTER EFFECTS, ADOBE PREMIERE PRO, ADOBE PHOTOSHOP, ADOBE ILLUSTRATOR</p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Services
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Current Projects</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>e-commerce Online Shopping platform where products can be viewed, appricated and bought securely with end user satisfaction.</p>
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Digital Agency, A modern way to get closer to your clients, advertising agency that has evolved to meet the changing needs of marketing in the digital age</p>
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Real Estate online platform that brings a buyer and seller together for property business</p>
+      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p class="zoom"><a href="">www.stilldeveloping.com</a></p> 
+</footer>
+
+</body>
+</html>
